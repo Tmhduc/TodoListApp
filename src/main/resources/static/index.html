@@ -16,23 +16,25 @@
             </form>
         </div>
         <div class="TaskList">
-            <table class="TableList">
+            <table class="TableList" id="myTable">
                 <tr>
                     <th>Task</th>
                     <th>Actions</th>
                 </tr>
-                <tr>
+                <tr data-task-id="1">
                     <td>
-                        <a href="" >Finishing HTMl Layout</a>
+                        <input type="checkbox" class="checkbox" >
+                        <a href="" class="task-text">Finishing the layout</a>
                     </td>
                     <td>
                         <button id="edit-btn">Edit</button>
                         <button id="delete-btn">Delete</button>
                     </td>
                 </tr>
-                <tr>
+                <tr data-task-id="2">
                     <td>
-                        <a href="" >Study for CMPT 276 Midterm</a>
+                        <input type="checkbox" class="checkbox" >
+                        <a href="" class="task-text">Study for CMPT 276 Midterm</a>
                     </td>
                     <td>
                         <button id="edit-btn">Edit</button>
@@ -42,5 +44,6 @@
             </table>
         </div>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
