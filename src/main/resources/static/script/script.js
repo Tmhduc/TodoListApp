@@ -1,11 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const ListCheckboxes = document.querySelectorAll('.checkbox');
-    //selecting all checkboxes with class name 'checkbox'
+//Adding a deleting button to all the tasks
+var myTaskList = document.getElementsByTagName("li");
+for (var i = 0; i < myTaskList.length; i++){
+    var span = document.createElement("button");
+    var text = document.createTextNode("Remove");
+    span.className = "remove";
+    span.appendChild(text);
+    myTaskList[i].appendChild(span);
+}
 
-    ListCheckboxes.forEach(checkbox =>{
-        checkbox.addEventListener('change', () =>{
-            const taskRow = this.closest('task-row');
-            const taskId = taskRow.getAttribute('data-task-id');
-        })
-    })
-})
+//Click on the delete button to remove the task
+var close = document.getElementsByClassName("remove");
+for (var i = 0; i < close.length; i++){ //iterating through the close button list
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.display = 'none';
+    }
+}
+
+//Adding a checked symbol when clicking on a task
+
+

@@ -45,6 +45,18 @@ body{
     /* cursor: pointer; */
 }
 
+.remove{
+    background-color: plum;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px;
+    position: inherit;
+    margin: 3px;
+}
+.remove:hover{
+    background-color: rgb(202, 160, 226);
+    cursor: pointer;
+}
 .button{
     margin: 8px 8px;
     border: 1px solid #dbc7c7;
@@ -57,7 +69,6 @@ body{
     background-color:#dbc7c7; 
     cursor: pointer;
 }
-
 #edit-btn{
     margin: 5px;
     border: 1px solid #dbc7c7;
@@ -79,18 +90,6 @@ body{
 #delete-btn:hover{
     background-color:#b24040; 
     cursor: pointer;
-}
-table{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th{
-    border: 1px solid #dddddd;
-    text-align: center;
-    /* margin: 5px; */
-    padding: 8px;
 }
 a{
     text-decoration: none;
