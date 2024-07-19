@@ -13,14 +13,12 @@
         <div class = "AddForm">
             <form class = "InputForm">
                 <input id="input" type = "text" name = "task" placeholder = "Enter Task">
-                <span onclick="newTask()" class="button" type = "submit">
+                <span id="button" class="button" type = "submit">
                     <img id="addIcon" src="img/Notes.png" alt="">
                 </span>
             </form>
         </div>
-        <ul class="myTask">
-            <li>Hit the gym</li>
-            <li class="checked">Meeting with team on development</li>
+        <ul class="myTask" id="myTask">
         </ul>
     </div>
     <script src="script/script.js"></script>

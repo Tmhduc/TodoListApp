@@ -47,15 +47,20 @@ body{
 
 .remove{
     background-color: plum;
+    display: flex;
+    justify-content: center;
     border-radius: 5px;
     text-align: center;
     padding: 3px;
     position: inherit;
-    margin: 3px;
+    margin: 15px;
 }
 .remove:hover{
     background-color: rgb(202, 160, 226);
     cursor: pointer;
+}
+.remove button{
+    margin: 10px;
 }
 .button{
     margin: 8px 8px;
@@ -97,4 +102,16 @@ a{
 }
 tr:nth-child(even){
     background-color: rgb(214, 212, 212);
+}
+
+#task{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.checked{
+    text-decoration: line-through;
+    color: grey;
 }
