@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" th:href="@{/style/style.css}">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
     <div class = "container">
         <div class = "MainHeader">TODO LIST</div>
         <div class = "AddForm">
-            <form class = "InputForm">
+            <form class = "InputForm" th:action="@{/todos}" method="post">
                 <input id="input" type = "text" name = "task" placeholder = "Enter Task">
                 <span id="button" class="button" type = "submit">
                     <img id="addIcon" src="img/Notes.png" alt="">
@@ -19,8 +19,9 @@
             </form>
         </div>
         <ul class="myTask" id="myTask">
+            <li th:each="task : ${tasks}" th:text="${task.name}"></li>
         </ul>
     </div>
-    <script src="script/script.js"></script>
+    <script th:src="@{/script/script.js}"></script>
 </body>
 </html>

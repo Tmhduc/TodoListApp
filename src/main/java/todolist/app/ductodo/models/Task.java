@@ -11,8 +11,7 @@ public class Task {
     private String task;
     public Task(){
     }
-    public Task(int id, String task){
-        this.id = id;
+    public Task(String task){
         this.task = task;
     }
     public int getId() {
