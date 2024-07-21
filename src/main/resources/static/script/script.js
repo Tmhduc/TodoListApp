@@ -1,10 +1,4 @@
 //Adding a deleting button to all the tasks
-var myTaskList = document.getElementsByTagName("li");
-for (var i = 0; i < myTaskList.length; i++){
-
-
-}
-
 function addRemoveButton(taskElement){
     var span = document.createElement("button");
     var text = document.createTextNode("Remove");
